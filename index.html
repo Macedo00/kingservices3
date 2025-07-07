@@ -42,35 +42,50 @@
     
     
 <style>
+.Fade-In{
+  animation: fadein linear 3s
+  
+}
+@keyframes fadein {
+  from{
+    opacity: 0;
+  to{
+    opacity: 1;
+  }
+}
+
+.Fade-In:hover{
+  from{
+    opacity: 1;
+  to{
+    opacity: 0;
+  }
+}
 
 
-  .animFadeIn{
-    animation: fadeIn 2s linear;
+
+
+.Fade-In2{
+  animation: fadein2 linear 4s
+  
+}
+@keyframes fadein2 {
+  from{
+    opacity: 0;
+  to{
+    opacity: 1;
   }
-  
-  @keyframes fadeIn{
-    from {opacity:0}
-    to {opacity:1}
-    
-  }
-  
-  
-  
-  
-  
-  
-  
-  
+}
 </style>
 </head>
 
 <body>
     <!-- Topbar Start -->
-    <div class="container-fluid bg-primary d-none d-lg-block">
+    <div class="container-fluid bg-primary d-none d-lg-block Fade-In">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 text-center text-lg-start mb-2 mb-lg-0">
-                    <div class="d-inline-flex align-items-center">
+                    <div class="Fade-In2 d-inline-flex align-items-center">
                         <a class="text-dark py-2 pe-3 border-end border-white" href=""><i class="bi bi-telephone text-secondary me-2"></i>+012 98204 4847</a>
                         <a class="text-dark py-2 px-3" href=""><i class="bi bi-envelope text-secondary me-2"></i>t9118860@gmail.com</a>
                     </div>
@@ -101,9 +116,9 @@
 
 
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark shadow-sm px-5 py-3 py-lg-0">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark shadow-sm px-5 py-3 py-lg-0 Fade-In2">
         <a href="index.html" class="navbar-brand p-0">
-            <h1 class="m-0 text-uppercase text-primary"></i>King'service</h1>
+            <h1 class="Fade-In m-0 text-uppercase text-primary"></i>King'service</h1>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -137,7 +152,7 @@
 
 
     <!-- Hero Start -->
-    <div class="container-fluid bg-primary py-5 bg-hero" style="margin-bottom: 70px;">
+    <div class="Fade-In container-fluid bg-primary py-5 bg-hero" style="margin-bottom: 70px;">
         <div class="container py-5">
             <div class="row justify-content-start">
                 <div class="col-lg-8 text-center text-lg-start">
@@ -154,7 +169,7 @@
 
 
     <!-- About Start -->
-    <div class="container-fluid py-5">
+    <div class="container-fluid py-5 Fade-In">
         <div class="container py-5">
             <div class="row gx-0 mb-3 mb-lg-0">
                 <div class="col-lg-6 my-lg-5 py-lg-5">
@@ -190,8 +205,8 @@ A empresa pode focar no seu core business, o que otimiza o seu tempo, recursos e
     
 
     <!-- Services Start -->
-    <div class="container-fluid py-5">
-        <div class="container py-5">
+    <div class="container-fluid FadeIn py-5">
+        <div class="container py-5 Fade-In">
             <div class="text-center mx-auto mb-5" style="max-width: 500px;">
                 <h1 class="display-5">Albúm<br> Serviços Prestados</h1>
                 <hr class="w-25 mx-auto text-primary" style="opacity: 1;">
@@ -201,18 +216,9 @@ A empresa pode focar no seu core business, o que otimiza o seu tempo, recursos e
                     
                     <div class="service-item d-flex flex-column align-items-center justify-content-center text-center p-5 pt-0">
                         <div class="service-icon p-3">
-                            <div><i class="fa fa-2x fa-road"></i></div>
-                        </div>
-                        <h3 class="mt-5">Sinalização e Trânsito</h3>
-                        <a class="btn shadow-none text-secondary" href="blog2.html">ENTRAR<i class="bi bi-arrow-right ms-1"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 pt-5">
-                    <div class="service-item d-flex flex-column align-items-center justify-content-center text-center p-5 pt-0">
-                        <div class="service-icon p-3">
                             <div><i class="fa fa-2x fa-city"></i></div>
                         </div>
-                        <h3 class="mt-5">Construção e Reforma</h3>
+                        <h3 class="mt-5">Construção e reforma</h3>
                         <a class="btn shadow-none text-secondary" href="blog3.html">ENTRAR<i class="bi bi-arrow-right ms-1"></i></a>
                     </div>
                 </div>
@@ -225,6 +231,15 @@ A empresa pode focar no seu core business, o que otimiza o seu tempo, recursos e
                         <a class="btn shadow-none text-secondary" href="blog4.html">ENTRAR<i class="bi bi-arrow-right ms-1"></i></a>
                     </div>
                 </div>
+                <div class="col-lg-4 col-md-6 pt-5">
+                    <div class="service-item d-flex flex-column align-items-center justify-content-center text-center p-5 pt-0">
+                        <div class="service-icon p-3">
+                            <div><i class="fa fa-2x fa-road"></i></div>
+                        </div>
+                        <h3 class="mt-5">Sinalização e Trânsito</h3>
+                        <a class="btn shadow-none text-secondary" href="blog2.html">ENTRAR<i class="bi bi-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -235,7 +250,7 @@ A empresa pode focar no seu core business, o que otimiza o seu tempo, recursos e
 
     <!-- Team Start -->
     <div class="container-fluid py-5">
-        <div class="container py-5">
+        <div class="container py-5 Fade-In">
             <div class="text-center mx-auto mb-5" style="max-width: 500px;">
                 <h1 class="display-5">SOLICITAR SERVIÇOS </h1>
                 <hr class="w-25 mx-auto text-primary" style="opacity: 1;">
@@ -366,7 +381,7 @@ A empresa pode focar no seu core business, o que otimiza o seu tempo, recursos e
 
 
     <!-- Testimonial Start -->
-    <div class="container-fluid bg-primary bg-testimonial py-5" style="margin: 90px 0; animFadeIn">
+    <div class="container-fluid bg-primary bg-testimonial py-5" style="margin: 90px 0">
         <div class="container py-5">
             <div class="row g-0 justify-content-end">
                 <div class="col-lg-6">
